@@ -1,7 +1,6 @@
 {
   "name": "ecommerce_api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
@@ -17,5 +16,15 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.2",
     "nodemon": "^2.0.18"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tushar-dubey5/Ecommerce-Website-Backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tushar-dubey5/Ecommerce-Website-Backend/issues"
+  },
+  "homepage": "https://github.com/tushar-dubey5/Ecommerce-Website-Backend#readme",
+  "description": ""
 }
