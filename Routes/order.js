@@ -7,7 +7,7 @@ const {
 } = require("../Routes/verifyToken");
 
 //CREATE
-router.post("/", verifyTokenAndAdmin, async (req, res) => {
+router.post("/", verifyToken, async (req, res) => {
   const newOrder = new Order(req.body);
   try {
     const savedOrder = await newOrder.save();
@@ -47,8 +47,8 @@ router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
 // //GET Order
 router.get("/find/:userid", verifyTokenAndAuthorization, async (req, res) => {
   try {
-    const order = await Order.find({ userId: req.params.userid });
-    res.status(200).json(order);
+    const orders = await Order.find({ userId: req.params.userid });
+    res.status(200).json(orders);
   } catch (err) {
     res.status(500).json(err);
   }
